@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Registro de usuario</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <style>
+
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+   
+
+    <div id="toasts"></div>
+    <div class="testbox">
+      
+      <form action="/">
+
+        
+        <div class="banner">
+          <h1></h1>
+        </div>
+
+
+        <div class="item">
+          <p><strong>Nombres</strong></p>
+          <input type="text" name="nombres" id="nombres"   value=""  placeholder="" />
+        </div>
+
+        
+        <div class="item">
+          <p><strong>Apellidos</strong></p>
+          <input type="text" name="apellidos"  id="apellidos"   value=""   placeholder="" />
+        </div>
+
+
+           
+        <div class="item">
+          <p><strong>Correo electronico</strong></p>
+          <input type="email" name="correo" required  value=""   id="correo"/>
+        </div>
+
+
+        <div class="item">
+            <p><strong>Categoria</strong></p>
+            <select name="pago" id="pago"> 
+              <option value="Individual">Individual</option>
+              <option value="Corporativo">Corporativo</option>
+            </select>
+        </div>
+
+        <!--<div class="container">-->
+          <div class="item">
+            <p><strong>Contraseña</strong></p>
+            <input required type="password"  value=""  name="contra" id="contra"/>
+          </div>
+
+          <div class="item">
+            <p><strong>Repite contraseña</strong></p>
+            <input required type="password" name="rcontra" value="" id="rcontra" />
+          </div>
+         <!--</div>-->
+         <hr>
+          <div class="item">
+            <p class="link" style="text-align: center; padding-top:10px"><strong> <a href="terminos.html" target="_blank">Acepto envio de publicidad e información de la empresa</a>  </strong></p>
+            <input type="checkbox" name="termino" id="termino"/>
+          </div>
+
+          <div class="item">
+            <p class="link" style="text-align: center; padding-top:10px"><strong> <a href="terminos.html" target="_blank">Acepto los terminos de servicio</a>  </strong></p>
+            <input type="checkbox" name="termino_servicio" id="termino_servicio"/>
+          </div>
+          <hr>
+
+         <div class="btn-block">
+          <button id="myBtn" type="button" onclick="" >Guardar</button>
+          
+          <button  type="button" onclick="getUsers()" >VER USUARIOS</button>
+
+          <a class="button" href="paper.html">Newslette</a>
+        </div>
+      </form>
+    </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="text-align: center;">
+          <span class="close">&times;</span>
+          <div id="diverror">
+          
+          </div>
+          <button type="button" style="display: none;" id="btnfinal" onclick="enviarFormulario()">CLIC PARA GUARDAR </button>
+          
+        </div>
+
+      </div>
+
+    <script src="js/functions.js"></script>
+  </body>
+</html>
